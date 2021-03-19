@@ -63,6 +63,10 @@
         </select> </p> <br>
         <br>
 
+        <p> <strong> Latitud </strong> <input type="text" @bind-value="@vc.Lalitud" style="border-radius: 25px; border-color: rgb(180, 180, 180)" > 
+        
+        <strong> Longitud </strong> <input type="text" @bind-value="@vc.Longitud" style="border-radius: 25px; border-color: rgb(180, 180, 180)" > </p> <br>
+
         <p><strong> Marca de Vacuna </strong> <select name="Marca" @bind="@vc.MarcaVacuna" style="border-radius: 25px; border-color: rgb(180, 180, 180)">
         @foreach(var item in @GetVacunas()){
             <option value="@item.Marca">@item.Marca</option>
@@ -163,7 +167,7 @@
                 SqliteConnection cone;
 
                 // connetion string.
-                cone = new SqliteConnection(@"Data Source= Data//Tarea6.db");
+                cone = new SqliteConnection(@"Data Source= Data//Tarea8.db");
 
                 // Abriendo la conexion.
                 cone.Open();
@@ -197,6 +201,7 @@
                 vc.Apellido = Persona.Apellido1 + " " + Persona.Apellido2;
                 vc.FechaNacimiento = Persona.FechaNacimiento.Substring(0,10);
                 vc.FechaPdosis = DateTime.Now.ToString("yyyy-MM-dd");
+                
 
                 //Cargando en variables los contenidos de la fecha.
                 MesString =Persona.FechaNacimiento.Substring(5,2);
@@ -294,6 +299,8 @@
         vc.FechaPdosis="";
         vc.FechaSdosis="";
         vc.MarcaVacuna="";
+        vc.Lalitud="";
+        vc.Longitud="";
         Mensaje = "";
 
     }
@@ -304,7 +311,7 @@
         SqliteConnection con;
 
         // connetion string.
-        con = new SqliteConnection(@"Data Source= Data//Tarea6.db");
+        con = new SqliteConnection(@"Data Source= Data//Tarea8.db");
 
         // Abriendo la conexion.
         con.Open();

@@ -1,3 +1,46 @@
 @page "/ConsultaVacunados"
-
+@using Tarea8_App.Models
 <h2>Consulta de Vacunados</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Cedula</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Provincia</th>
+                <th scope="col">Fecha de Nacimiento</th>
+                <th scope="col">Signo Zodiacal</th>
+                <th scope="col">Marca Vacuna</th>
+                <th scope="col">Fecha Primer </th>
+                <th scope="col">Fecha Segunda</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vc in @GetVacunados())
+            {
+                <tr>
+                    <td>@vc.Cedula</td>
+                    <td>@vc.Nombre</td>
+                    <td>@vc.Apellido</td>
+                    <td>@vc.Telefono</td>
+                    <td>@vc.Provincia</td>
+                    <td>@vc.FechaNacimiento</td>
+                    <td>@vc.SignoZodiacal</td>
+                    <td>@vc.MarcaVacuna</td>
+                    <td>@vc.FechaPdosis</td>
+                    <td>@vc.FechaSdosis</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code{
+    List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
+
+}
+
+

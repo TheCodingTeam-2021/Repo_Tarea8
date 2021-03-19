@@ -12,389 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1283553237,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.AnularVacunacion",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AnularVacunacion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.AnularVacunacion"
-        }
-      },
-      {
-        "HashCode": -349120303,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.AnularVacunacion",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.AnularVacunacion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.AnularVacunacion",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -927004928,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.Configuracion",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Configuracion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.Configuracion"
-        }
-      },
-      {
-        "HashCode": -1193829680,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.Configuracion",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.Configuracion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.Configuracion",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1216398253,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.ConsultaVacunados",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ConsultaVacunados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.ConsultaVacunados"
-        }
-      },
-      {
-        "HashCode": 2029957803,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.ConsultaVacunados",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.ConsultaVacunados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.ConsultaVacunados",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1503815201,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.Counter",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -1765621837,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.Counter",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1122800834,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.Index",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -918002212,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.Index",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1067746106,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.RegistrarVacunado",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RegistrarVacunado"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.RegistrarVacunado"
-        }
-      },
-      {
-        "HashCode": -537873025,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.RegistrarVacunado",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.RegistrarVacunado"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.RegistrarVacunado",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2086286344,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.VacunadosMarca",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VacunadosMarca"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.VacunadosMarca"
-        }
-      },
-      {
-        "HashCode": -20391147,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.VacunadosMarca",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.VacunadosMarca"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.VacunadosMarca",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 938116065,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.VacunadosProvincia",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VacunadosProvincia"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.VacunadosProvincia"
-        }
-      },
-      {
-        "HashCode": 1378036094,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.VacunadosProvincia",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.VacunadosProvincia"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.VacunadosProvincia",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 932030221,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.VacunadosZodiacal",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VacunadosZodiacal"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.VacunadosZodiacal"
-        }
-      },
-      {
-        "HashCode": 1139873494,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Pages.VacunadosZodiacal",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Pages.VacunadosZodiacal"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Pages.VacunadosZodiacal",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1277121261,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.App",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.App"
-        }
-      },
-      {
-        "HashCode": -1090255601,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.App",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -35871607,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Shared.SurveyPrompt",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -1095004029,
-        "Kind": "Components.Component",
-        "Name": "Tarea8_App.Shared.SurveyPrompt",
-        "AssemblyName": "Tarea8_App",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Tarea8_App.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Tarea8_App.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 504011654,
         "Kind": "Components.Component",
         "Name": "Tarea8_App.Shared.MainLayout",
@@ -491,6 +108,59 @@
         }
       },
       {
+        "HashCode": -35871607,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Shared.SurveyPrompt",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -1095004029,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Shared.SurveyPrompt",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1648712565,
         "Kind": "Components.Component",
         "Name": "Tarea8_App.Shared.NavMenu",
@@ -520,6 +190,369 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Tarea8_App.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1277121261,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.App",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.App"
+        }
+      },
+      {
+        "HashCode": -1090255601,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.App",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1694076862,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.FetchData",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -492933499,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.FetchData",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1503815201,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.Counter",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1765621837,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.Counter",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1122800834,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.Index",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -918002212,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.Index",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 938116065,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.VacunadosProvincia",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VacunadosProvincia"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.VacunadosProvincia"
+        }
+      },
+      {
+        "HashCode": 1378036094,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.VacunadosProvincia",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.VacunadosProvincia"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.VacunadosProvincia",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -927004928,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.Configuracion",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Configuracion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.Configuracion"
+        }
+      },
+      {
+        "HashCode": -1193829680,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.Configuracion",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.Configuracion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.Configuracion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2086286344,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.VacunadosMarca",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VacunadosMarca"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.VacunadosMarca"
+        }
+      },
+      {
+        "HashCode": -20391147,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.VacunadosMarca",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.VacunadosMarca"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.VacunadosMarca",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 932030221,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.VacunadosZodiacal",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VacunadosZodiacal"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.VacunadosZodiacal"
+        }
+      },
+      {
+        "HashCode": 1139873494,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.VacunadosZodiacal",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.VacunadosZodiacal"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.VacunadosZodiacal",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1283553237,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.AnularVacunacion",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AnularVacunacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.AnularVacunacion"
+        }
+      },
+      {
+        "HashCode": -349120303,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.AnularVacunacion",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.AnularVacunacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.AnularVacunacion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1216398253,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.ConsultaVacunados",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ConsultaVacunados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.ConsultaVacunados"
+        }
+      },
+      {
+        "HashCode": 2029957803,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.ConsultaVacunados",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.ConsultaVacunados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.ConsultaVacunados",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1067746106,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.RegistrarVacunado",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RegistrarVacunado"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.RegistrarVacunado"
+        }
+      },
+      {
+        "HashCode": -537873025,
+        "Kind": "Components.Component",
+        "Name": "Tarea8_App.Pages.RegistrarVacunado",
+        "AssemblyName": "Tarea8_App",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tarea8_App.Pages.RegistrarVacunado"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Tarea8_App.Pages.RegistrarVacunado",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16147,6 +16180,11 @@
     {
       "FilePath": "c:\\Users\\civar\\Desktop\\Tarea\\Programacion III\\Tarea8\\Repo_Tarea8\\Tarea8_App\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\civar\\Desktop\\Tarea\\Programacion III\\Tarea8\\Repo_Tarea8\\Tarea8_App\\Pages\\FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {

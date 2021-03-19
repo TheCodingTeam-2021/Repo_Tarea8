@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UwA8BZrK7B/+BvnTANO0qHik6I+J6xHpIWGxCSvgcVSQZCui5a2JpAs6qFNgO3yM1RR5uKSKrrIyo1l25jR5+Q==",
+  "dgSpecHash": "03noxBcN+26haOkxp0rbS+3nRQoSp4EtLcp0IpxIyeXSSLSvQPx0pehIM05pxNocnEwSYLhuFkb8B4S3WyXziQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\civar\\Desktop\\Tarea\\Programacion III\\Tarea8\\Tarea8_App\\Tarea8_App.csproj",
+  "projectFilePath": "C:\\Users\\civar\\Desktop\\Tarea\\Programacion III\\Tarea8\\Repo_Tarea8\\Tarea8_App\\Tarea8_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\civar\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\civar\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
