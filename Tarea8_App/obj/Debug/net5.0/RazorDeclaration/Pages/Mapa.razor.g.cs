@@ -131,6 +131,20 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\marye\source\repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Mapa.razor"
+using Tarea8_App.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\marye\source\repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Mapa.razor"
+using Microsoft.EntityFrameworkCore;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Mapa")]
     public partial class Mapa : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -140,12 +154,13 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "C:\Users\marye\source\repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Mapa.razor"
+#line 27 "C:\Users\marye\source\repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Mapa.razor"
        
-    int zoom = 3;
-    bool showMadridMarker;
+    int zoom = 8;
     string txt;
-    
+    string info;
+    List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
+
 
     void OnMapClick(GoogleMapClickEventArgs args)
     {
@@ -154,7 +169,7 @@ using Radzen.Blazor;
 
     void OnMarkerClick(RadzenGoogleMapMarker marker)
     {
-        txt = ($"Map {marker.Title} marker clicked. Marker position -> Lat: {marker.Position.Lat}, Lng: {marker.Position.Lng}");
+        txt = ($"{marker.Title}");
     }
 
 #line default

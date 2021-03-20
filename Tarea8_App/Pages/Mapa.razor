@@ -1,33 +1,35 @@
 ﻿@page "/Mapa"
-<h3>Mapa</h3>
+@using Tarea8_App.Models;
+@using Microsoft.EntityFrameworkCore;
+
+<h1>Mapa de Vacunados</h1>
 <div class="row">
     <div class="col-xl-6">
-        <h3>
-            Show marker for Madrid
-            <RadzenCheckBox @bind-Value=@showMadridMarker />
-        </h3>
-        <RadzenGoogleMap style="height: 400px" Zoom=@zoom Center=@(new GoogleMapPosition() { Lat = 42.6977, Lng = 23.3219 }) MapClick=@OnMapClick MarkerClick=@OnMarkerClick>
+        
+        <RadzenGoogleMap style="height: 400px" Zoom=@zoom Center=@(new GoogleMapPosition() { Lat = 18.492602, Lng = -69.8551282 }) MapClick=@OnMapClick MarkerClick=@OnMarkerClick>
             <Markers>
-                <RadzenGoogleMapMarker Title="London" Label="London" Position=@(new GoogleMapPosition() { Lat = 51.5074, Lng = 0.1278 }) />
-                <RadzenGoogleMapMarker Title="Paris " Label="Paris" Position=@(new GoogleMapPosition() { Lat = 48.8566, Lng = 2.3522 }) />
-                @if (showMadridMarker)
+                @foreach (var v in GetVacunados())
                 {
-                    <RadzenGoogleMapMarker Title="Madrid " Label="Madrid" Position=@(new GoogleMapPosition() { Lat = 40.4168, Lng = -3.7038 }) />
+                    info = ($"Paciente: {v.Nombre} {v.Apellido} - Cedula: {v.Cedula} - Marca Vacuna: {v.MarcaVacuna} - Dosis 1: {v.FechaPdosis} - Dosis 2: {v.FechaSdosis}");
+                    <RadzenGoogleMapMarker Title="@info" Label="@v.Apellido" Position=@(new GoogleMapPosition() { Lat = Double.Parse(v.Lalitud), Lng = Double.Parse(v.Longitud) }) />
                 }
+                
             </Markers>
         </RadzenGoogleMap>
     </div>
-    <div>
-        @txt
-    </div>
 
+</div><br />
+
+<div>
+    <h2>@txt</h2>
 </div>
 
 @code {
-    int zoom = 3;
-    bool showMadridMarker;
+    int zoom = 8;
     string txt;
-    
+    string info;
+    List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
+
 
     void OnMapClick(GoogleMapClickEventArgs args)
     {
@@ -36,6 +38,6 @@
 
     void OnMarkerClick(RadzenGoogleMapMarker marker)
     {
-        txt = ($"Map {marker.Title} marker clicked. Marker position -> Lat: {marker.Position.Lat}, Lng: {marker.Position.Lng}");
+        txt = ($"{marker.Title}");
     }
 }
