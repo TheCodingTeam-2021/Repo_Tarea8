@@ -1,27 +1,57 @@
 @page "/VacunadosMarca"
 @using Tarea8_App.Models;
+@using Microsoft.EntityFrameworkCore;
 <h2>Listado de vacunados por marca de vacuna</h2>
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Personas vacunadas</th>
             <th>Marca de vacuna</th>
+            <th>Personas vacunadas</th>
         </tr>
     </thead>
+
     <tbody>
+        <tr>
+            <th>Pfizer</th>
+            @foreach (var v in @GetVacunados())
+            {
+                if (v.MarcaVacuna == "Pfizer")
+                {
+                    int pfizer = 0;
+                    pfizer++;
+                    <th>@pfizer</th>
+                }
+            }
+        </tr>
+        <tr>
+            <th>Moderna</th>
+            @foreach (var v in @GetVacunados())
+            {
+                if (v.MarcaVacuna == "Moderna")
+                {
+                    int moderna = 0;
+                    moderna++;
+                    <th>@moderna</th>
+                }
+            }
+        </tr>
+        <tr>
+            <th>Johnson & Johnson</th>
+            @foreach (var v in @GetVacunados())
+            {
+                if (v.MarcaVacuna == "Johnson & Johnson")
+                {
+                    int jj = 0;
+                    jj++;
+                    <th>@jj</th>
+                }
+            }
+        </tr>
         
-        <tr>
-            <th>@vacdos.Nombre</th>
-            <th>@vac.Marca</th>
-        </tr>
-        <tr>
-            <th>@vacdos.Nombre</th>
-            <th>@vac.Marca</th>
-        </tr>
     </tbody>
 </table>
 
 @code{
-    Vacunas vac = new Vacunas();
-    Vacunados vacdos = new Vacunados();
-}
+    List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
+
+} 
