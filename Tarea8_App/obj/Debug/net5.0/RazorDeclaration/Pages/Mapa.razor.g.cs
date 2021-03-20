@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Tarea8_App.Shared
+namespace Tarea8_App.Pages
 {
     #line hidden
     using System;
@@ -131,13 +131,35 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Mapa")]
+    public partial class Mapa : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 26 "C:\Users\marye\source\repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Mapa.razor"
+       
+    int zoom = 3;
+    bool showMadridMarker;
+    string txt;
+    
+
+    void OnMapClick(GoogleMapClickEventArgs args)
+    {
+        txt = ($"Map clicked at Lat: {args.Position.Lat}, Lng: {args.Position.Lng}");
+    }
+
+    void OnMarkerClick(RadzenGoogleMapMarker marker)
+    {
+        txt = ($"Map {marker.Title} marker clicked. Marker position -> Lat: {marker.Position.Lat}, Lng: {marker.Position.Lng}");
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
