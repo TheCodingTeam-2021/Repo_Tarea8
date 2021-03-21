@@ -154,10 +154,20 @@ using Microsoft.EntityFrameworkCore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 401 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosProvincia.razor"
+#line 641 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosProvincia.razor"
       
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
 
+    //Variables de las provincias
+    int azua = 0, bahoruco = 0, barahona = 0, dajabon = 0, dn = 0, duarte = 0, eliaspina = 0, elseibo = 0, espaillat = 0;
+
+    int hatomayor = 0, hermanasmirabal = 0, independencia = 0, laaltagracia = 0, laromana = 0, lavega = 0;
+
+    int mariatrinidadsan = 0, monsenornouel = 0, montecristi = 0, monteplata = 0, pedernales = 0, peravia = 0;
+
+    int puertoplata = 0, samana = 0, sancristobal = 0, sanjosedeocoa = 0, sanjuan = 0, sanpedro = 0, sanchezram = 0;
+
+    int santiago = 0, santiagorodri = 0, sd = 0, valverde = 0;
 
 #line default
 #line hidden

@@ -2,6 +2,111 @@
 @using Tarea8_App.Models;
 @using Microsoft.EntityFrameworkCore;
 <h2>Listado de vacunados por provincia</h2>
+
+@foreach (var v in GetVacunados())
+{
+    switch (v.Provincia)
+    {
+        case "Azua":
+            azua += 1;
+            break;
+        case "Bahoruco":
+            bahoruco += 1;
+            break;
+        case "Barahona":
+            barahona += 1;
+            break;
+        case "Dajabon":
+            dajabon += 1;
+            break;
+        case "Distrito Nacional":
+            dn += 1;
+            break;
+        case "Duarte":
+            duarte += 1;
+            break;
+        case "Elías Pina":
+            eliaspina += 1;
+            break;
+        case "El Seibo":
+            elseibo += 1;
+            break;
+        case "Espaillat":
+            espaillat += 1;
+            break;
+        case "Hato Mayor":
+            hatomayor += 1;
+            break;
+        case "Hermanas Mirabal":
+            hermanasmirabal += 1;
+            break;
+        case "Independencia":
+            independencia += 1;
+            break;
+        case "La Altagracia":
+            laaltagracia += 1;
+            break;
+        case "La Romana":
+            laromana += 1;
+            break;
+        case "La Vega":
+            lavega += 1;
+            break;
+        case "Maria Trinidad Sánchez":
+            mariatrinidadsan += 1;
+            break;
+        case "Monsenor Nouel":
+            monsenornouel += 1;
+            break;
+        case "Monte Cristi":
+            montecristi += 1;
+            break;
+        case "Monte Plata":
+            monteplata += 1;
+            break;
+        case "Perdernales":
+            pedernales += 1;
+            break;
+        case "Peravia":
+            peravia += 1;
+            break;
+        case "Puerto Plata":
+            puertoplata += 1;
+            break;
+        case "Samana":
+            samana += 1;
+            break;
+        case "San Critobal":
+            sancristobal += 1;
+            break;
+        case "San Jose de Ocoa":
+            sanjosedeocoa += 1;
+            break;
+        case "San Juan":
+            sanjuan += 1;
+            break;
+        case "San Pedro de Macoris":
+            sanpedro += 1;
+            break;
+        case "Sánchez Ramirez":
+            sanchezram += 1;
+            break;
+        case "Santiago":
+            santiago += 1;
+            break;
+        case "Santiago Rodríguez":
+            santiagorodri += 1;
+            break;
+        case "Santo Domingo":
+            sd += 1;
+            break;
+        case "Valverde":
+            valverde += 1;
+            break;
+    }
+}
+
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -10,6 +115,138 @@
         </tr>
     </thead>
 
+    <tbody>
+        <tr>
+            <th>Azua</th>
+            <th>@azua</th>
+        </tr>
+        <tr>
+            <th>Bahoruco</th>
+            <th>@bahoruco</th>
+        </tr>
+        <tr>
+            <th>Barahona</th>
+            <th>@barahona</th>
+        </tr>
+        <tr>
+            <th>Dajabon</th>
+            <th>@dajabon</th>
+        </tr>
+        <tr>
+            <th>Distrito Nacional</th>
+            <th>@dn</th>
+        </tr>
+        <tr>
+            <th>Duarte</th>
+            <th>@duarte</th>
+        </tr>
+        <tr>
+            <th>Elías Pina</th>
+            <th>@eliaspina</th>
+        </tr>
+        <tr>
+            <th>El Seibo</th>
+            <th>@elseibo</th>
+        </tr>
+        <tr>
+            <th>Espaillat</th>
+            <th>@espaillat</th>
+        </tr>
+        <tr>
+            <th>Hato Mayor</th>
+            <th>@hatomayor</th>
+        </tr>
+        <tr>
+            <th>Hermanas Mirabal</th>
+            <th>@hermanasmirabal</th>
+        </tr>
+        <tr>
+            <th>Independencia</th>
+            <th>@independencia</th>
+        </tr>
+        <tr>
+            <th>La Altagracia</th>
+            <th>@laaltagracia</th>
+        </tr>
+        <tr>
+            <th>La Romana</th>
+            <th>@laromana</th>
+        </tr>
+        <tr>
+            <th>La Vega</th>
+            <th>@lavega</th>
+        </tr>
+        <tr>
+            <th>Maria Trinidad Sánchez</th>
+            <th>@mariatrinidadsan</th>
+        </tr>
+        <tr>
+            <th>Monsenor Nouel</th>
+            <th>@monsenornouel</th>
+        </tr>
+        <tr>
+            <th>Monte Cristi</th>
+            <th>@montecristi</th>
+        </tr>
+        <tr>
+            <th>Monte Plata</th>
+            <th>@monteplata</th>
+        </tr>
+        <tr>
+            <th>Pedernales</th>
+            <th>@pedernales</th>
+        </tr>
+        <tr>
+            <th>Peravia</th>
+            <th>@peravia</th>
+        </tr>
+        <tr>
+            <th>Puerto Plata</th>
+            <th>@puertoplata</th>
+        </tr>
+        <tr>
+            <th>Samana</th>
+            <th>@samana</th>
+        </tr>
+        <tr>
+            <th>San Cristobal</th>
+            <th>@sancristobal</th>
+        </tr>
+        <tr>
+            <th>San Jose de Ocoa</th>
+            <th>@sanjosedeocoa</th>
+        </tr>
+        <tr>
+            <th>San Juan</th>
+            <th>@sanjuan</th>
+        </tr>
+        <tr>
+            <th>San Pedro de Macoris</th>
+            <th>@sanpedro</th>
+        </tr>
+        <tr>
+            <th>Sánchez Ramirez</th>
+            <th>@sanchezram</th>
+        </tr>
+        <tr>
+            <th>Santiago</th>
+            <th>@santiago</th>
+        </tr>
+        <tr>
+            <th>Santiago Rodríguez</th>
+            <th>@santiagorodri</th>
+        </tr>
+        <tr>
+            <th>Santo Domingo</th>
+            <th>@sd</th>
+        </tr>
+        <tr>
+            <th>Valverde</th>
+            <th>@valverde</th>
+        </tr>
+    </tbody>
+
+    <!--
     <tbody>
         <tr>
             <th>Azua</th>
@@ -396,9 +633,22 @@
             }
         </tr>
     </tbody>
+        -->
+
+
 </table>
 
 @code{
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
 
+    //Variables de las provincias
+    int azua = 0, bahoruco = 0, barahona = 0, dajabon = 0, dn = 0, duarte = 0, eliaspina = 0, elseibo = 0, espaillat = 0;
+
+    int hatomayor = 0, hermanasmirabal = 0, independencia = 0, laaltagracia = 0, laromana = 0, lavega = 0;
+
+    int mariatrinidadsan = 0, monsenornouel = 0, montecristi = 0, monteplata = 0, pedernales = 0, peravia = 0;
+
+    int puertoplata = 0, samana = 0, sancristobal = 0, sanjosedeocoa = 0, sanjuan = 0, sanpedro = 0, sanchezram = 0;
+
+    int santiago = 0, santiagorodri = 0, sd = 0, valverde = 0;
 } 
