@@ -154,9 +154,11 @@ using Microsoft.EntityFrameworkCore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosMarca.razor"
+#line 89 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosMarca.razor"
       
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
+
+    int moderna = 0, pfizer = 0, jj = 0;
 
 
 #line default

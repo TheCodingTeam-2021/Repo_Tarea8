@@ -168,7 +168,7 @@ using Microsoft.EntityFrameworkCore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 219 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
+#line 123 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
       
     // Variables al utilizar en el codigo.
     bool exits;

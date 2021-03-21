@@ -2,6 +2,23 @@
 @using Tarea8_App.Models;
 @using Microsoft.EntityFrameworkCore;
 <h2>Listado de vacunados por marca de vacuna</h2>
+
+@foreach (var v in GetVacunados())
+{
+    switch (v.MarcaVacuna)
+    {
+        case "Pfizer":
+            pfizer += 1;
+            break;
+        case "Johnson & Johnson":
+            jj += 1;
+            break;
+        case "Moderna":
+            moderna += 1;
+            break;
+    }
+}
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -13,45 +30,24 @@
     <tbody>
         <tr>
             <th>Pfizer</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.MarcaVacuna == "Pfizer")
-                {
-                    int pfizer = 0;
-                    pfizer++;
-                    <th>@pfizer</th>
-                }
-            }
+            <th>@pfizer</th>
         </tr>
         <tr>
             <th>Moderna</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.MarcaVacuna == "Moderna")
-                {
-                    int moderna = 0;
-                    moderna++;
-                    <th>@moderna</th>
-                }
-            }
+            <th>@moderna</th>
         </tr>
         <tr>
             <th>Johnson & Johnson</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.MarcaVacuna == "Johnson & Johnson")
-                {
-                    int jj = 0;
-                    jj++;
-                    <th>@jj</th>
-                }
-            }
+            <th>@jj</th>
         </tr>
-        
+
     </tbody>
+    
 </table>
 
 @code{
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
+
+    int moderna = 0, pfizer = 0, jj = 0;
 
 } 
