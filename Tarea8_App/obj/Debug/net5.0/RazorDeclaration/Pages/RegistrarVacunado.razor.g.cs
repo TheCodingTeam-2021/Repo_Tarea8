@@ -13,147 +13,147 @@ namespace Tarea8_App.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 1 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 2 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 3 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 4 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 5 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 6 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 7 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 8 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 9 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 10 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 11 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Tarea8_App;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 12 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Tarea8_App.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 13 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Newtonsoft.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 14 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using System.Text.Json.Serialization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 15 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using System.Net;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 16 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 17 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
+#line 17 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\_Imports.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
+#line 2 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
 using Tarea8_App.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
+#line 3 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
 using System.Data.SqlClient;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
+#line 4 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
 using Microsoft.Data.Sqlite;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
+#line 5 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
 using Microsoft.EntityFrameworkCore;
 
 #line default
@@ -168,7 +168,7 @@ using Microsoft.EntityFrameworkCore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 92 "C:\Users\marti\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
+#line 219 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\RegistrarVacunado.razor"
       
     // Variables al utilizar en el codigo.
     bool exits;
@@ -176,6 +176,9 @@ using Microsoft.EntityFrameworkCore;
     int dia, mes;
     string MesString;
     string DiaString;
+    int totalInventario;
+
+
 
     // Instancia de la clase del Models Vacunados donde se guardaran los Registro.
     Vacunados vc = new Vacunados();
@@ -185,6 +188,7 @@ using Microsoft.EntityFrameworkCore;
 
     // Lista la cual se usara para carga los datos del select.
     List<Vacunas> GetVacunas() => new Tarea8Context().Vacunas.ToList();
+
 
     // Mapeo del Json de la API.
     public class Root {
@@ -284,7 +288,7 @@ using Microsoft.EntityFrameworkCore;
                 vc.Apellido = Persona.Apellido1 + " " + Persona.Apellido2;
                 vc.FechaNacimiento = Persona.FechaNacimiento.Substring(0,10);
                 vc.FechaPdosis = DateTime.Now.ToString("yyyy-MM-dd");
-                
+
 
                 //Cargando en variables los contenidos de la fecha.
                 MesString =Persona.FechaNacimiento.Substring(5,2);
