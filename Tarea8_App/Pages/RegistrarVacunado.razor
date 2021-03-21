@@ -28,6 +28,8 @@
         <strong> Telefono </strong> <input type="text" @bind-value="@vc.Telefono" style="border-radius: 25px; border-color: rgb(180, 180, 180)" > 
 
         <strong> Provincia </strong> <select name="Pronvicia" @bind="@vc.Provincia" style="border-radius: 25px; border-color: rgb(180, 180, 180)">
+            <option value="N/A">Seleccione su Provincia</option>
+            <option value="Azua">Azua</option>
             <option value="Azua">Azua</option>
             <option value="Bahoruco">Bahoruco</option>
             <option value="Barahona">Barahona</option>
@@ -68,6 +70,7 @@
         <strong> Longitud </strong> <input type="text" @bind-value="@vc.Longitud" style="border-radius: 25px; border-color: rgb(180, 180, 180)" > </p> <br>
 
         <p><strong> Marca de Vacuna </strong> <select name="Marca" @bind="@vc.MarcaVacuna" style="border-radius: 25px; border-color: rgb(180, 180, 180)">
+        <option value="N/A">Seleccione su Vacuna</option>
         @foreach(var item in @GetVacunas()){
             <option value="@item.Marca">@item.Marca</option>
         }

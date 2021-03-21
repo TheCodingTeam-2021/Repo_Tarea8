@@ -7575,20 +7575,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marye\\.nuget\\packages\\": {}
+    "C:\\Users\\marti\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marye\\source\\repos\\TheCodingTeam-2021\\Repo_Tarea8\\Tarea8_App\\Tarea8_App.csproj",
+      "projectUniqueName": "C:\\Users\\marti\\Source\\Repos\\TheCodingTeam-2021\\Repo_Tarea8\\Tarea8_App\\Tarea8_App.csproj",
       "projectName": "Tarea8_App",
-      "projectPath": "C:\\Users\\marye\\source\\repos\\TheCodingTeam-2021\\Repo_Tarea8\\Tarea8_App\\Tarea8_App.csproj",
-      "packagesPath": "C:\\Users\\marye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marye\\source\\repos\\TheCodingTeam-2021\\Repo_Tarea8\\Tarea8_App\\obj\\",
+      "projectPath": "C:\\Users\\marti\\Source\\Repos\\TheCodingTeam-2021\\Repo_Tarea8\\Tarea8_App\\Tarea8_App.csproj",
+      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marti\\Source\\Repos\\TheCodingTeam-2021\\Repo_Tarea8\\Tarea8_App\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\marye\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
