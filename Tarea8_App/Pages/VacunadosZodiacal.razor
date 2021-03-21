@@ -2,6 +2,50 @@
 @using Tarea8_App.Models;
 @using Microsoft.EntityFrameworkCore;
 <h2>Listado de vacunados por signo zodiacal</h2>
+
+@foreach (var v in GetVacunados())
+{
+    switch (v.SignoZodiacal)
+    {
+        case "Aries":
+            aries += 1;
+            break;
+        case "Tauro":
+            tauro += 1;
+            break;
+        case "Geminis":
+            geminis += 1;
+            break;
+        case "Cancer":
+            cancer += 1;
+            break;
+        case "Leo":
+            leo += 1;
+            break;
+        case "Virgo":
+            virgo += 1;
+            break;
+        case "Libra":
+            libra += 1;
+            break;
+        case "Escorpio":
+            escorpio += 1;
+            break;
+        case "Sagitario":
+            sagitario += 1;
+            break;
+        case "Capricornio":
+            capricornio += 1;
+            break;
+        case "Acuario":
+            acuario += 1;
+            break;
+        case "Piscis":
+            piscis += 1;
+            break;
+    }
+}
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -13,146 +57,51 @@
     <tbody>
         <tr>
             <th>Aries</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Aries")
-                {
-                    int aries = 0;
-                    aries++;
-                    <th>@aries</th>
-}
-            }
+            <th>@aries</th>
         </tr>
         <tr>
             <th>Tauro</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Tauro")
-                {
-                    int tauro = 0;
-                    tauro++;
-                    <th>@tauro</th>
-}
-            }
+            <th>@tauro</th>
         </tr>
         <tr>
             <th>Geminis</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Geminis")
-                {
-                    int geminis = 0;
-                    geminis++;
-                    <th>@geminis</th>
-}
-            }
+            <th>@geminis</th>
         </tr>
         <tr>
             <th>Cancer</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Cancer")
-                {
-                    int cancer = 0;
-                    cancer++;
-                    <th>@cancer</th>
-}
-            }
+            <th>@cancer</th>
         </tr>
         <tr>
             <th>Leo</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Leo")
-                {
-                    int leo = 0;
-                    leo++;
-                    <th>@leo</th>
-}
-            }
+            <th>@leo</th>
         </tr>
         <tr>
             <th>Virgo</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Virgo")
-                {
-                    int virgo = 0;
-                    virgo++;
-                    <th>@virgo</th>
-}
-            }
+            <th>@virgo</th>
         </tr>
         <tr>
             <th>Libra</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Libra")
-                {
-                    int libra = 0;
-                    libra++;
-                    <th>@libra</th>
-}
-            }
+            <th>@libra</th>
         </tr>
         <tr>
             <th>Escorpio</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Escorpio")
-                {
-                    int escorpio = 0;
-                    escorpio++;
-                    <th>@escorpio</th>
-}
-            }
+            <th>@escorpio</th>
         </tr>
         <tr>
             <th>Sagitario</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Sagitario")
-                {
-                    int sagitario = 0;
-                    sagitario++;
-                    <th>@sagitario</th>
-}
-            }
+            <th>@sagitario</th>
         </tr>
         <tr>
             <th>Capricornio</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Capricornio")
-                {
-                    int capricornio = 0;
-                    capricornio++;
-                    <th>@capricornio</th>
-}
-            }
+            <th>@capricornio</th>
         </tr>
         <tr>
             <th>Acuario</th>
-            @foreach (var v in @GetVacunados())
-            {
-                @if (v.SignoZodiacal == "Acuario")
-                {
-                    int acuario = 0;
-                    acuario++;
-                    <th>@acuario</th>
-}}
+            <th>@acuario</th>
         </tr>
         <tr>
             <th>Piscis</th>
-            @foreach (var v in @GetVacunados())
-            {
-                if (v.SignoZodiacal == "Piscis")
-                {
-                    int piscis = 0;
-                    piscis++;
-                    <th>@piscis</th>
-}
-            }
+            <th>@piscis</th>
         </tr>
     </tbody>
 </table>
@@ -160,4 +109,6 @@
 @code{
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
 
+    int aries = 0, tauro = 0, geminis = 0, cancer = 0, leo = 0, virgo = 0, libra = 0, escorpio = 0;
+    int sagitario = 0, capricornio = 0, acuario = 0, piscis = 0;
 } 

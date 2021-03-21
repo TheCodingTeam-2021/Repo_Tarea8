@@ -154,10 +154,12 @@ using Microsoft.EntityFrameworkCore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 160 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosZodiacal.razor"
+#line 109 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosZodiacal.razor"
       
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
 
+    int aries = 0, tauro = 0, geminis = 0, cancer = 0, leo = 0, virgo = 0, libra = 0, escorpio = 0;
+    int sagitario = 0, capricornio = 0, acuario = 0, piscis = 0;
 
 #line default
 #line hidden
