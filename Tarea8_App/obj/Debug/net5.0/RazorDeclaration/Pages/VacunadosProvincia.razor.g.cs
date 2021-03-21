@@ -154,7 +154,7 @@ using Microsoft.EntityFrameworkCore;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 641 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosProvincia.razor"
+#line 251 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\VacunadosProvincia.razor"
       
     List<Vacunados> GetVacunados() => new Tarea8Context().Vacunados.ToList();
 

@@ -1,3 +1,101 @@
 @page "/Configuracion"
+@using Tarea8_App.Models
+@using System.Data.SqlClient
+@using Microsoft.Data.Sqlite
+@using Microsoft.EntityFrameworkCore
+@inject HttpClient Http;
 
 <h2>Configuaracion</h2>
+
+<h4>Ingrese Marca de vacuna:</h4>
+<input type="text" id="marca" name="marca" @bind-value="@vc.Marca">
+<br>
+<br>
+<h4>Ingrese nueva cantidad</h4>
+<input type="text" id="cantidad" name="cantidad" @bind-value="@vc.Cantidad" onClick="this.select();">
+<br>
+<br>
+<button class="btn btn-primary" @onclick="UpdateInventario">Confirmar</button>
+<br>
+<br>
+<p><h5> <strong>@Mensaje</strong></h5> </p>
+<br>
+
+@code{
+    // Variables al utilizar en el codigo.
+    bool exists;
+    string Mensaje;
+
+    Vacunas vc = new Vacunas();
+
+    // Lista de los vacunados con Where, para saber si existe el registro.
+    List<Vacunas> GetVacunas() => new Tarea8Context().Vacunas.ToList().Where(v => v.Marca == vc.Marca).ToList();
+
+    // Metodo para eliminar registrados.
+    void UpdateInventario()
+    {
+        using (Tarea8Context cmd_Update = new Tarea8Context())
+        {
+            if (vc.Marca == null)
+            {
+                Mensaje = "Debe Lenar el Campo Marca de vacuna!";
+
+            }
+            else
+            {
+                foreach (var item in @GetVacunas())
+                {
+                    if (item != null)
+                    {
+                        exists = true;
+                    }
+                    else
+                    {
+                        exists = false;
+                    }
+                }
+                if (exists == true)
+                {
+
+                    // Conexion manual a la base de datos para el metodo raw de guardar la segunda fecha.
+                    SqliteConnection cone;
+
+                    // connetion string.
+                    cone = new SqliteConnection(@"Data Source= Data//Tarea8.db");
+
+                    // Abriendo la conexion.
+                    cone.Open();
+
+                    // Sentencia de sql para el proceso de update.
+                    var query = "UPDATE Vacunas SET Cantidad = Cantidad + '"+vc.Cantidad+"' WHERE Marca = '"+vc.Marca+"'";
+
+                    // Creando nuevo comando al cual le pasamos la conexion y la sentencia.
+                    SqliteCommand command = new SqliteCommand(query, cone);
+
+                    // Ejecutar sentencia.
+                    cmd_Update.Database.ExecuteSqlRaw(query, vc.Marca);
+
+                    // Cerrando la conexion
+                    cone.Close();
+                    Clear();
+                    Mensaje = "Inventario de vacunas actualizado";
+                }
+                else
+                {
+                    Clear();
+                    Mensaje = "Marca de vacuna no encontrada!";
+                }
+
+            }
+        }
+    }
+
+    // Metodo para limpiar los campos.
+    void Clear()
+    {
+        vc.Marca = null;
+        vc.Cantidad = 0;
+        Mensaje = "";
+
+    }
+}

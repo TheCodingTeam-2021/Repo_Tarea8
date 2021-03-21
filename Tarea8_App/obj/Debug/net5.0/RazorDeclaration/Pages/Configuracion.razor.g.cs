@@ -131,6 +131,34 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Configuracion.razor"
+using Tarea8_App.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Configuracion.razor"
+using System.Data.SqlClient;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Configuracion.razor"
+using Microsoft.Data.Sqlite;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Configuracion.razor"
+using Microsoft.EntityFrameworkCore;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Configuracion")]
     public partial class Configuracion : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -139,6 +167,90 @@ using Radzen.Blazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 24 "C:\Users\marye\Source\Repos\TheCodingTeam-2021\Repo_Tarea8\Tarea8_App\Pages\Configuracion.razor"
+      
+    // Variables al utilizar en el codigo.
+    bool exists;
+    string Mensaje;
+
+    Vacunas vc = new Vacunas();
+
+    // Lista de los vacunados con Where, para saber si existe el registro.
+    List<Vacunas> GetVacunas() => new Tarea8Context().Vacunas.ToList().Where(v => v.Marca == vc.Marca).ToList();
+
+    // Metodo para eliminar registrados.
+    void UpdateInventario()
+    {
+        using (Tarea8Context cmd_Update = new Tarea8Context())
+        {
+            if (vc.Marca == null)
+            {
+                Mensaje = "Debe Lenar el Campo Marca de vacuna!";
+
+            }
+            else
+            {
+                foreach (var item in @GetVacunas())
+                {
+                    if (item != null)
+                    {
+                        exists = true;
+                    }
+                    else
+                    {
+                        exists = false;
+                    }
+                }
+                if (exists == true)
+                {
+
+                    // Conexion manual a la base de datos para el metodo raw de guardar la segunda fecha.
+                    SqliteConnection cone;
+
+                    // connetion string.
+                    cone = new SqliteConnection(@"Data Source= Data//Tarea8.db");
+
+                    // Abriendo la conexion.
+                    cone.Open();
+
+                    // Sentencia de sql para el proceso de update.
+                    var query = "UPDATE Vacunas SET Cantidad = Cantidad + '"+vc.Cantidad+"' WHERE Marca = '"+vc.Marca+"'";
+
+                    // Creando nuevo comando al cual le pasamos la conexion y la sentencia.
+                    SqliteCommand command = new SqliteCommand(query, cone);
+
+                    // Ejecutar sentencia.
+                    cmd_Update.Database.ExecuteSqlRaw(query, vc.Marca);
+
+                    // Cerrando la conexion
+                    cone.Close();
+                    Clear();
+                    Mensaje = "Inventario de vacunas actualizado";
+                }
+                else
+                {
+                    Clear();
+                    Mensaje = "Marca de vacuna no encontrada!";
+                }
+
+            }
+        }
+    }
+
+    // Metodo para limpiar los campos.
+    void Clear()
+    {
+        vc.Marca = null;
+        vc.Cantidad = 0;
+        Mensaje = "";
+
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
